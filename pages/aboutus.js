@@ -5,29 +5,15 @@ const Aboutus = () => {
       <div className="flexing">
       <div className="griding">
       <div className="comment">
-      <h2 className="text-lg font-bold">About us</h2>
-       <p className="text-base">
-        We have being in the indsutry for the last 3 years providing our services.
-        our services include
+      <h2 className="text-2xl font-bold">About us</h2>
+      <p className="text-base peer">
+       Your thesis may also be considered by different employers when processing your job application in the future. The high-quality of our completed dissertation examples have had a positive impact on our customer base over the years.
+
+      Research papers assignment will be considered by your instructors when determining the final grade at the end of your studies. Hence, you should seek research writing to ensure that you submit a quality college paper that will guarantee good grades in the end. When you search for a research paper writing service cheap, you will realize that our company is one of the industry's top-ranked.
        </p>
-       <h2 className="text-lg font-bold">Constructions and Maintanance</h2>
-        <ul className="text-base">
-          <li>Road construction.</li>
-          <li>House construction.</li>
-          <li>Water supply.</li>
-        </ul>
-       <h2 className="text-lg font-bold">Cleaning Services</h2>
-        <ul className="text-base">
-          <li>Comprehensive office general cleaning and maintance.</li>
-          <li>Carpet and upholtery cleaning.</li>
-          <li>Domestic and Resdencial cleaning.</li>
-          <li>Post-construction cleaning.</li>
-          <li>Fumigation and pest control.</li>
-          <li>Landscaping and Gardening services.</li>
-        </ul>
        </div>
-        <div className="imaging">
-        <img src="services3.jpeg" alt="responsive web development" className="cardimg1"/>
+        <div className="">
+        <img src="dissertation-help-and-capstone-project.jpg" alt="responsive web development" className="cardimg1"/>
       </div>
     </div>
     </div>

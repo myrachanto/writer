@@ -1,2 +1,2 @@
-export const phone = '+254727032297'
-export const email = 'amboselicleaningservicesltd@gmail.com'
+export const phone = '+1234567890'
+export const email = 'example@gmail.com'

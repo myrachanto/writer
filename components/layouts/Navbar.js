@@ -33,15 +33,15 @@ const Navbar = ({}) => {
                       </svg>
                   </label>
                 </button>
-                <div className='text-white'>+12345667890</div>
+                <div className='text-white'>{phone}</div>
                 <div className="lg:flex hidden justify-end px-2 items-center order-2  w-1/2">
                       <nav className="lg:flex items-center justify-between text-sm text-white " >
                         <div className="px-2 py-1 flex justify-start capitalize  " >
                         <Link href="/"  className="no-underline ">PRICING</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize  " >
-                        <Link href="/portfolio"  className="no-underline ">ABOUT US</Link></div>
+                        <Link href="/aboutus"  className="no-underline ">ABOUT US</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize  " >
-                        <Link href="/aboutus"  className="no-underline ">CONTACT US</Link></div>
+                        <Link href="/contact"  className="no-underline ">CONTACT US</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize  " >
                         <Link href="/blog"  className="no-underline ">Log in</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize  " >
