@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+  margin: 0;
+  padding: 0;
+}
+.background{
+  background-image: url('/construction.jpg');
+  background-size: cover;
+}
+.gradient {
+  background: linear-gradient(#451de3,  #1E40AF);
+}
+/* .block{
+display: block;
+} */
+/* .hidden{
+display: none;
+} */
+.productlineup:nth-child(even){
+  @apply bg-gray-200;
+}
+.coloring{
+ @apply bg-blue-700;
+}
+.coloring1{
+  @apply text-blue-700
+}
+.coloring3{
+  @apply border-blue-700;
+}
+.mainer{
+@apply h-screen w-full flex justify-center items-center;
+}
+.herobg{
+@apply  h-screen w-full;
+}
+.bgimg{
+@apply  h-screen  w-full object-cover bg-cover bg-no-repeat;
+}
+.app{
+@apply pt-4 md:pt-2 px-4 xl:px-0 ;
+}
+.cardimg2{
+  @apply w-full h-80 sm:h-full md:max-h-80 object-contain z-0 lg:transform transition duration-500 hover:scale-125;
+}
+.overlay{
+background-color: #D56F2D;
+}
+.btn4{
+  @apply  mx-auto text-white my-2 py-1 px-4 shadow-lg w-44;
+}
+.logo5{
+@apply h-10 w-10;
+}
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+.linki{
+@apply  bg-gray-200 hover:bg-gray-400 py-2 block pl-2 pr-5;
+}
+.header{
+@apply w-full flex sm:flex sm:justify-between sm:items-center mx-auto justify-around items-center border-current ;
+}
+.main{
+@apply mx-auto text-white rounded-lg  bg-opacity-50 mt-16  px-4 flex flex-wrap justify-between;
+}
+.main1{
+@apply w-full text-white mx-auto ;
+}
+.message{
+@apply flex flex-col text-xl font-bold text-white w-full md:w-2/5 justify-center items-center md:items-start text-center md:text-left;
+}
+.message1{
+@apply uppercase text-xl  text-white tracking-normal w-full;
+}
+.message2{
+@apply my-4 text-2xl lg:text-4xl text-white  font-bold leading-tight;
+}
+.comment{
+@apply leading-normal text-white text-xl mb-8 mr-4;
+}
+.img{
+@apply w-full md:w-4/5 z-50;
+}
+.drimg{
+@apply w-full md:w-3/5 py-6 text-center bg-transparent;
+}
+.cv{
+@apply relative -mt-10 lg:-mt-24 border-transparent;
+}
+.section{
+@apply bg-white mt-10 pt-28 border border-b-2 py-4;
+}
+.s-head{
+@apply flex justify-center items-center text-xl mx-10 px-10 font-semibold text-gray-900;
+}
+.flexing{
+@apply flex justify-center items-center ;
+}
+.griding{
+@apply grid md:grid-cols-2 lg:grid-cols-4 container gap-4 mt-10;
+}
+.griding2{
+@apply grid md:grid-cols-2 lg:grid-cols-4 container gap-2 mt-10;
+}
+.sections{
+@apply bg-gray-50 py-10;
+}
+.header1{
+@apply flex justify-center items-center text-2xl md:mx-10 md:px-10 font-semibold text-gray-900 ;
+}
+.flexing{
+@apply flex justify-center items-center;
+}
+.griding{
+@apply grid md:grid-cols-2 container mx-4 gap-8 md:mt-10;
+}
+.comment{
+@apply text-gray-700 text-lg font-normal;
+}
+.imaging{
+@apply rounded overflow-hidden shadow-lg;
+}
+.cardimg1{
+@apply w-full h-60 object-contain transform transition duration-500 hover:scale-125;
+}
+.br{
+@apply my-2;
+}
+.headerr{
+@apply flex justify-center items-center font-semibold text-gray-900;
+}
+.flexings{
+  @apply flex justify-start items-center ;
+}
+.gridings{
+@apply grid lg:grid-cols-2 container gap-4;
+}
+
+.imagings{
+  @apply rounded w-5/6 overflow-hidden shadow-lg z-0;
+}
+.gridings1{
+  @apply grid md:grid-cols-2 lg:grid-cols-3 gap-2 md:pt-4 ;
+}
+.comment{
+@apply text-gray-700 font-normal text-lg m-2 mx-5;
+}
+.imaging{
+@apply rounded overflow-hidden shadow-lg;
+}
+.cardimg1{
+@apply w-full px-4 lg:px-0 object-cover transform transition duration-500 hover:scale-125;
+}
+.ols{
+@apply ml-12;
+}
+.card{
+@apply bg-gray-100 rounded overflow-hidden shadow-lg;
+}
+.cardimg{
+@apply  w-full h-32 sm:h-48 object-cover;
+}
+
+.boid{
+@apply container mx-auto mt-8;
+}
+.flexin{
+  @apply flex justify-center max-w-7xl items-center;
+}
+.svg{
+  @apply h-4 w-4 md:h-5 md:w-5  mx-2;
+}
+.cards{
+  @apply bg-white rounded shadow-md overflow-hidden ;
+}
+.cardimg{
+  @apply w-40 h-40 sm:w-52 lg:w-56 lg:h-56 2xl:w-60 2xl:h-60 object-cover;
+}
+.h4header{
+  @apply   text-black font-bold flex flex-wrap items-center justify-center leading-tight;
+}
+
+h2{
+  @apply text-2xl my-2;
+}
+.inpus{
+  @apply placeholder-black border rounded w-full py-2 px-2 outline-none focus:shadow-inner;
+}
+.app{
+  @apply object-cover;
+}
+.appi{
+  @apply pt-20 bg-orange-900 w-full bg-opacity-10 bg-gradient-to-b from-orange-900 via-transparent to-orange-300;
+}
+.shaper{
+ fill: white;
+}
+.main{
+  @apply  text-white flex flex-wrap justify-between;
+}
+.message1{
+  @apply flex flex-col font-bold mb-20 text-white w-full md:w-2/5 justify-center items-center md:items-start text-center md:text-left;
+}
+.mess{
+  @apply  text-3xl  text-black font-bold leading-tight;
+}
+.comments{
+  @apply leading-normal text-black text-lg mb-8;
+}
+.btn3{
+  @apply  mx-auto lg:mx-0 hover:underline font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-lg transform transition hover:scale-105 duration-300 ease-in-out;
+}
+.img{
+  @apply w-full md:w-4/5 z-50 rounded-3xl;
+}
+.drimg{
+  @apply w-full md:w-3/5 py-6 text-center bg-transparent;
+}
+.adprice{
+  @apply text-2xl md:text-3xl;
+}
+.picsider {
+  right: 550px
+}
+.comme{
+  right: 600px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.helps{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.caroheigth{
+  max-height: 1200px;
+
+}
