@@ -47,11 +47,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Carocard />
+      <div className='mt-96 lg:mt-0'>
       <h2 className='flex justify-center items-center font-semibold py-5'>Why Us?</h2>
-      <div className='max-w-7xl  2xl:mx-auto mx-4 grid grid-cols-3'>
+      <div className='max-w-7xl  2xl:mx-auto mx-4 grid lg:grid-cols-3 md:grid-cols-2'>
       {portfolio && portfolio.map(portfo => (
         <Portfo portfo={portfo} key={portfo.title}/>
       ))}
+      </div>
       </div>
       <Ordering />
       <h2 className='flex justify-center items-center font-semibold py-5'>About us</h2>
