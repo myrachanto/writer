@@ -42,7 +42,7 @@ const Navbar = ({}) => {
                         <div className="px-2 py-1 flex justify-start capitalize " >
                         <Link href="/"  className="no-underline ">PRICING</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
-                        <Link href="/ABOTUS"  className="no-underline ">ABOUT US</Link></div>
+                        <Link href="/aboutus"  className="no-underline ">ABOUT US</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
                         <Link href="/contact"  className="no-underline ">CONTACT</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
