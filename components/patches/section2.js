@@ -2,7 +2,7 @@ const Section2 = () => {
     return ( 
         <div>
     <div className="my-2 ">
-      <div className="flexing">
+      <div className="flexing max-w-7xl mx-auto">
       <div className="griding">
       <div className="comment">
       <h2 className="text-lg font-bold">Can I get a paper help?</h2>

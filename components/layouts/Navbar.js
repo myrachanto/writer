@@ -19,16 +19,17 @@ const Navbar = ({}) => {
     return (
         <div className="mb-5 max-w-7xl">
           <div id="header" className=" w-full z-30 top-0 bg-gray-100 fixed">
-            <div className=" topper px-2 flex  justify-between  items-center py-2 text-black ">
+            <div className="max-w-7xl mx-auto px-2 2xl:px-0 flex  justify-between  items-center py-2 text-black ">
             <div className="lg:px-0  ">
                   <Link href="/" className=" coloring1 tracking-wide no-underline hover:no-underline " >
-                      <div className="coloring1 py-1 px-4 font-bold text-lg">Gilbert Writers</div>
+                      <div className="coloring1 py-1 px-4 2xl:px-0 font-bold text-lg">Gilbert Writers</div>
                   </Link>
             </div>
-            <div className=" text-black  hidden md:block  font-semibold  text-right mx-4">{phone}</div>
+            <div className=" text-black  hidden md:block  font-semibold  text-right mx-4 2xl:mx-0">{phone}</div>
         </div>
         <hr />
-              <div className="px-2 w-full flex flex-wrap justify-between lg:justify-start items-center mt-0 py-3 coloring">      
+        <div className='coloring'>
+              <div className="px-2 2xl:px-0 max-w-7xl mx-auto flex flex-wrap justify-between lg:justify-start items-center mt-0 py-3 ">      
               <button onClick={menuset}>
                   <label className="cursor-pointer md:hidden flex px-4">
                       <svg className="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -37,7 +38,7 @@ const Navbar = ({}) => {
                       </svg>
                   </label>
                 </button>
-                <div className="md:flex hidden justify-end px-2 items-center w-full order-2">
+                <div className="md:flex hidden justify-end px-2 2xl:px-0 items-center w-full order-2">
                       <nav className="md:flex items-center justify-between text-sm text-white " >
                         <div className="px-2 py-1 flex justify-start capitalize " >
                         <Link href="/"  className="no-underline ">PRICING</Link></div>
@@ -72,6 +73,7 @@ const Navbar = ({}) => {
                   {/* <div className="block lg:hidden text-black font-semibold">{phone}</div> */}
                   </div>
               </div>
+          </div>
           </div>
       </div>
      );

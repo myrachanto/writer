@@ -1,7 +1,7 @@
 const Ordering = () => {
     return ( 
         <div className="coloring my-5 py-4">
-        <div className="max-w-7xl  2xl:mx-auto mx-6  text-white">
+        <div className="max-w-7xl 2xl:mx-auto mx-6  text-white">
             <h2 className="flex justify-center items-center font-semibold text-2xl ">Make Order</h2>
             <div className="">
                 <p className=" text-center">

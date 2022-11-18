@@ -31,6 +31,7 @@ const Footer = () => {
     ])
     return ( 
         <div className="coloring">
+          <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center flex-wrap px-4 lg:px-0 mx-4">
                 {footers.map(foot => {
                     return (
@@ -39,6 +40,7 @@ const Footer = () => {
                 })}
             </div>
             <div className="flex flex-wrap justify-center items-center text-white mx-4"><a href="https://chantosweb.co.ke">  Developed by Chantosweb Developers</a></div>
+        </div>
         </div>
      );
 }

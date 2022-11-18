@@ -1,8 +1,8 @@
 const Section1 = () => {
     return ( 
         <div>
-    <div className="my-5 py-5">
-      <div className="flexing">
+    <div className="my-5 py-5 ">
+      <div className="flexing max-w-7xl mx-auto">
       <div className="griding">
         <div className=" flex justify-center items-center">
         <img src="dissertation-help-and-capstone-project.jpg" alt="responsive web development" className="cardimg1"/>

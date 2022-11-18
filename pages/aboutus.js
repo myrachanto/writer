@@ -1,8 +1,8 @@
 const Aboutus = () => {
     return ( 
         <div>
-    <div className="my-5 mt-24">
-      <div className="flexing">
+    <div className="my-5 mt-24 xl:py-10">
+      <div className="flexing max-w-7xl mx-auto ">
       <div className="griding">
       <div className="comment">
       <h2 className="text-2xl font-bold">About us</h2>
