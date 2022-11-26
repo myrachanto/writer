@@ -28,7 +28,7 @@ const Services = ({items, seo}) => {
       <h2 className='flex justify-center items-center font-semibold py-10'>Services</h2>
       <div className='max-w-7xl  2xl:mx-auto mx-4 grid lg:grid-cols-3 md:grid-cols-2'>
       {items && items.map(item => (
-        <div className=" p-4 shadow-sm m-2">
+        <div className=" p-4 shadow-sm m-2" key={item.title}>
         <div className="bg-blue-700 p-2 text-white"> {item.title}</div>
         {item.children && item.children.map(child => (
         <div className="p-2 cursor-pointer" key={child.id.url}>
