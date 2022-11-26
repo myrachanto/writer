@@ -53,7 +53,7 @@ const Navbar = ({}) => {
                         <div className="px-2 py-1 flex justify-start capitalize " >
                         <Link href="https://acemywriter.com/order/login" className="no-underline ">Login</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
-                        <a href="https://acemywriter.com/order/" target="_blank"><button type="submit"  className=" bg-orange-500 p-2 rounded-md">Order Now</button></a></div>
+                        <a href="https://acemywriter.com/order/" target="_blank" rel="noopener"><button type="submit"  className=" bg-orange-500 p-2 rounded-md">Order Now</button></a></div>
                         
                       </nav>
                   </div>
@@ -70,9 +70,9 @@ const Navbar = ({}) => {
                         <div className="px-2 py-1 capitalize  font-bold" >
                         <Link href="/blog"  className="no-underline ">BLOG</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
-                        <Link href="/"  className="no-underline ">Login</Link></div>
+                        <Link href="https://acemywriter.com/order/login"  className="no-underline ">Login</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
-                        <button type="submit"  className=" bg-orange-500 p-2 rounded-md">Order Now</button></div>
+                        <a href="https://acemywriter.com/order/" target="_blank" rel="noopener"><button type="submit"  className=" bg-orange-500 p-2 rounded-md">Order Now</button></a></div>
                     </nav>
                   ) :   <div className="hidden"></div> }
                   

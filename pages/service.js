@@ -31,7 +31,7 @@ const Services = ({items, seo}) => {
         <div className=" p-4 shadow-sm m-2">
         <div className="bg-blue-700 p-2 text-white"> {item.title}</div>
         {item.children && item.children.map(child => (
-        <div className="p-2 cursor-pointer" key={item._id}>
+        <div className="p-2 cursor-pointer" key={child._id}>
             <Link href={'/services/'+child.id.url}><a className="cursor-pointer">{child.id.name}</a></Link>
             </div>
       ))}
