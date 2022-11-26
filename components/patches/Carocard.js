@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Carocard = () => {
+const Carocard = ({h1,capture}) => {
     return ( 
         <>
         <div className="bg-blue-700">
@@ -44,7 +44,7 @@ const Carocard = () => {
                     </select>
                 </div>
                 <div className="my-2 flex justify-between ">
-                    <label>Number of pages<span className="text-gray-500 text-sm">275 words</span></label>
+                    <label  className="flex flex-wrap">Number of pages<span className="text-gray-500 text-sm ml-2">275 words</span></label>
                     <input type="number" className="rounded-lg"></input>
                 </div>
                 <div>
@@ -58,18 +58,18 @@ const Carocard = () => {
                 <div className="text-2xl font-bold">$12.99</div>
                 </div>
                 <div>
-                    <button className="rounded-lg bg-blue-700 w-full my-4 p-3 text-white font-semibold">Continue to Order</button>
+                <a href="https://acemywriter.com/order/" target="_blank"><button className="rounded-lg bg-blue-700 w-full my-4 p-3 text-white font-semibold">Continue to Order</button></a>
                 </div>
                 </div>
                 </div>
             <div className="h-7/12 hidden lg:block   bg-blue-800 rounded-3xl text-white">
                 <div className="my-20 ml-5"><button className=" text-sm bg-blue-900 px-3 py-2 rounded-2xl">Save 15%! Use FIRST-ORDER discount code  </button>
                 </div>
-                <div className=" mx-8 text-5xl font-bold">
-                Let world-class writers take care of your assignments
-                </div>
+                <h1 className=" mx-8 text-4xl font-bold">
+                {h1}
+                </h1>
                 <div className="mx-8 mt-8 text-lg"> 
-                We play well with Blackboard, Canvas, Pearson, Webassign, Aleks, McGraw-Hill, and so much more!
+                {capture}
                 </div>
             </div>
             <div className="h-7/12  bg-blue-800 rounded-3xl mt-20">
@@ -117,7 +117,7 @@ const Carocard = () => {
                         </select>
                     </div>
                     <div className="my-2 flex justify-between ">
-                        <label>Number of pages<span className="text-gray-500 text-sm">275 words</span></label>
+                       <label className="flex flex-wrap">Number of pages<span className="text-gray-500 text-sm ">275 words</span></label>
                         <input type="number" className="rounded-lg"></input>
                     </div>
                     <div>
@@ -131,18 +131,18 @@ const Carocard = () => {
                     <div className="text-2xl font-bold">$12.99</div>
                     </div>
                     <div>
-                        <button className="rounded-lg bg-blue-700 w-full my-4 p-3 text-white font-semibold">Continue to Order</button>
+                    <a href="https://acemywriter.com/order/" target="_blank"><button className="rounded-lg bg-blue-700 w-full my-4 p-3 text-white font-semibold">Continue to Order</button></a>
                     </div>
                     </div>
                     </div>
                 <div className="h-screen hidden lg:block   bg-blue-800 rounded-3xl text-white">
                     <div className="my-20 ml-5"><button className=" text-sm bg-blue-900 px-3 py-2 rounded-2xl">Save 15%! Use FIRST-ORDER discount code  </button>
                     </div>
-                    <div className=" mx-8 text-5xl font-bold">
-                    Let world-class writers take care of your assignments
-                    </div>
+                    <h1 className=" mx-8 text-4xl font-bold">
+                     {h1}
+                    </h1>
                     <div className="mx-8 mt-8 text-lg"> 
-                    We play well with Blackboard, Canvas, Pearson, Webassign, Aleks, McGraw-Hill, and so much more!
+                {capture}
                     </div>
                 </div>
                 <div className="h-screen  bg-blue-800 rounded-3xl mt-20">
@@ -201,18 +201,18 @@ const Carocard = () => {
                     <div className="text-2xl font-bold">$12.99</div>
                     </div>
                     <div>
-                        <button className="rounded-lg bg-blue-700 w-full my-2 p-3 text-white font-semibold">Continue to Order</button>
+                    <a href="https://acemywriter.com/order/" target="_blank"><button className="rounded-lg bg-blue-700 w-full my-2 p-3 text-white font-semibold">Continue to Order</button></a>
                     </div>
                     </div>
                     </div>
                     <div className="text-white">
                     <div className="mt-20 flex justify-center items-center"><button className=" text-sm bg-blue-900 text-white px-3 py-2 rounded-2xl">Save 15%! Use FIRST-ORDER discount code  </button>
                     </div>
-                    <div className=" mx-8 my-5 text-3xl font-bold text-center">
-                    Let world-class writers take care of your assignments
-                    </div>
+                    <h1 className=" mx-8 my-5 text-2xl font-bold text-center">
+                     {h1}
+                    </h1>
                     <div className=" text-lg text-center py-5"> 
-                    We play well with Blackboard, Canvas, Pearson, Webassign, Aleks, McGraw-Hill, and so much more!
+                    {capture}
                     </div>
                     </div>
                     <div className="mx-4">
@@ -269,18 +269,18 @@ const Carocard = () => {
                     <div className="text-2xl font-bold">$12.99</div>
                     </div>
                     <div>
-                        <button className="rounded-lg bg-blue-700 w-full my-2 p-3 text-white font-semibold">Continue to Order</button>
+                    <a href="https://acemywriter.com/order/" target="_blank"><button className="rounded-lg bg-blue-700 w-full my-2 p-3 text-white font-semibold">Continue to Order</button></a>
                     </div>
                     </div>
                     </div>
                     <div className="text-white">
                     <div className="mt-20 flex justify-start items-center"><button className=" text-sm bg-blue-900 text-white px-3 py-2 mx-6 rounded-2xl">Save 15%! Use FIRST-ORDER discount code  </button>
                     </div>
-                    <div className=" mx-8 my-5 text-3xl font-bold  ">
-                    Let world-class writers take care of your assignments
-                    </div>
+                    <h1 className=" mx-8 my-5 text-2xl font-bold  ">
+                     {h1}
+                    </h1>
                     <div className=" text-lg  mx-6 py-5"> 
-                    We play well with Blackboard, Canvas, Pearson, Webassign, Aleks, McGraw-Hill, and so much more!
+                    {capture}
                     </div>
                     </div>
                     <div className="mx-4">

@@ -2,8 +2,8 @@ const Aboutus = () => {
     return ( 
         <div>
     <div className="my-5 mt-24 xl:py-10">
-      <div className="flexing max-w-7xl mx-auto ">
-      <div className="griding">
+      <div className="flexing max-w-7xl mx-auto py-10">
+      <div className="grid md:grid-cols-2 gap-4">
       <div className="comment">
       <h2 className="text-2xl font-bold">About us</h2>
       <p className="text-base peer">

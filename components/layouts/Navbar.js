@@ -39,28 +39,36 @@ const Navbar = ({}) => {
                   </label>
                 </button>
                 <div className="md:flex hidden justify-end px-2 2xl:px-0 items-center w-full order-2">
-                      <nav className="md:flex items-center justify-between text-sm text-white " >
+                      <nav className="md:flex items-center justify-between text-sm text-white font-semibold" >
                         <div className="px-2 py-1 flex justify-start capitalize " >
-                        <Link href="/"  className="no-underline ">PRICING</Link></div>
+                        <Link href="/service"  className="no-underline ">SERVICE</Link></div>
+                        {/* <div className="px-2 py-1 flex justify-start capitalize " >
+                        <Link href="/"  className="no-underline ">PRICING</Link></div> */}
                         <div className="px-2 py-1 flex justify-start capitalize " >
                         <Link href="/aboutus"  className="no-underline ">ABOUT US</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
+                        <Link href="/blog"  className="no-underline ">BLOG</Link></div>
+                        <div className="px-2 py-1 flex justify-start capitalize " >
                         <Link href="/contact"  className="no-underline ">CONTACT</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
-                        <Link href="/"  className="no-underline ">Login</Link></div>
+                        <Link href="https://acemywriter.com/order/login" className="no-underline ">Login</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
-                        <button type="submit"  className=" bg-orange-500 p-2 rounded-md">Order Now</button></div>
+                        <a href="https://acemywriter.com/order/" target="_blank"><button type="submit"  className=" bg-orange-500 p-2 rounded-md">Order Now</button></a></div>
                         
                       </nav>
                   </div>
                   {isOpen ? (
                     <nav className=" md:hidden w-full order-2 text-white">
-                        <div className="px-2 py-1 capitalize  font-bold" >
-                        <Link href="/"  className="no-underline   font-bold ">PRICING</Link></div>
+                    <div className="px-2 py-1 capitalize  font-bold" >
+                    <Link href="/service"  className="no-underline   font-bold ">SERVICE</Link></div>
+                        {/* <div className="px-2 py-1 capitalize  font-bold" >
+                        <Link href="/"  className="no-underline   font-bold ">PRICING</Link></div> */}
                         <div className="px-2 py-1 capitalize  font-bold" >
                         <Link href="/aboutus"  className="no-underline ">ABOUT US</Link></div>
                         <div className="px-2 py-1 capitalize  font-bold" >
                         <Link href="/contact"  className="no-underline ">CONTACT</Link></div>
+                        <div className="px-2 py-1 capitalize  font-bold" >
+                        <Link href="/blog"  className="no-underline ">BLOG</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
                         <Link href="/"  className="no-underline ">Login</Link></div>
                         <div className="px-2 py-1 flex justify-start capitalize " >
@@ -70,7 +78,7 @@ const Navbar = ({}) => {
                   
                   <div className=" lg:hidden  flex items-center" id="nav-content">
                     
-                  {/* <div className="block lg:hidden text-black font-semibold">{phone}</div> */}
+                  <div className="block md:hidden text-white font-semibold">{phone}</div>
                   </div>
               </div>
           </div>

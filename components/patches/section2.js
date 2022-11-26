@@ -1,20 +1,26 @@
-const Section2 = () => {
+const Section2 = ({partd, partf1,partf2, partf3}) => {
     return ( 
         <div>
-    <div className="my-2 ">
-      <div className="flexing max-w-7xl mx-auto">
-      <div className="griding">
-      <div className="comment">
-      <h2 className="text-lg font-bold">Can I get a paper help?</h2>
-       <p className="text-base peer">
-       Yes! You can get the best paper help online with just one click as our professional writers have been trained to help you complete your assignments within as low as 3 hours deadline. Our paper help services have been available in the market for more than nine years, and for this reason, we have gained a competitive edge by helping thousands of students excel in their academics. We have mostly dealt with students in high school, college, university, and postgraduate levels. Our track is unbeaten, and this can be proven by thousands of papers we have delivered and the customers reviews, as seen on our reviews page. If you are thinking, can I get a paper help onlineand can I get someone to write my assignmentthen you are at the right place. Most of our paper help experts have PhD and Masters qualifications, and hence you will have an excellent paper delivered.
-       </p>
+    <div className="my-2  mx-6 peer">
+      <div className="flex justify-center items-center max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-4">
+      <div className="">
+            <div className="text-base mt-8 peer " dangerouslySetInnerHTML={{__html: partd}}></div>
        </div>
         <div className="flex justify-center items-center">
         <img src="business-plan-and-case-study.jpg" alt="responsive web development" className="cardimg1"/>
       </div>
     </div>
     </div>
+    <div className=" max-w-7xl xl:mx-auto ">
+      <div className="grid md:grid-cols-2 gap-4">
+    <div className="text-base mt-8 peer " dangerouslySetInnerHTML={{__html: partf1}}></div>
+           <div className="text-base mt-8 peer " dangerouslySetInnerHTML={{__html: partf2}}></div>
+    </div>
+    </div>
+    <div className=" max-w-7xl xl:mx-auto ">
+    <div className="text-base mt-8 peer " dangerouslySetInnerHTML={{__html: partf3}}></div>
+      </div>
     </div>
   </div>
      );
