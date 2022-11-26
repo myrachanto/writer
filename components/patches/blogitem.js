@@ -6,7 +6,7 @@ const Blogitem = ({item}) => {
          <>
          { item && 
          <div className="bg-gray-50 rounded overflow-hidden md:w-96 shadow-lg m-2">
-       <Link href={'/celebration/'+item.url}>
+       <Link href={'/blog/'+item.url}>
         <Image
         src={`${host}/uploads/blog/${item.image}`}
         alt={item.title}
