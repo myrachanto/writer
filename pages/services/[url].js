@@ -4,46 +4,47 @@ import Hero1 from "../../components/heros/hero1";
 import Ordering from "../../components/patches/ordering";
 import {host2} from "../../utils/myrconstants"
 
-export const getStaticProps = async ({params}) => {
+export const getServerSideProps = async ({params}) => {
     const res = await fetch(`${host2}/api/services/child/` + params.url)
      const data =  await res.json()
 
-     const resp = await fetch(`${host2}/api/data/keywords`)
-     const data1 =  await resp.json()
-    //  console.log("--------------service", data1)
-     if (Object.keys(data1.keywords).length === 0) {
-        console.log("inside");
-        return {
-          notFound: true,
-          props: {},
-          revalidate: 10,
-        };
-      }
+    //  const resp = await fetch(`${host2}/api/data/keywords`)
+    //  const data1 =  await resp.json()
+     console.log("--------------service", data)
+    //  if (Object.keys(data1.keywords).length === 0) {
+    //     console.log("inside");
+    //     return {
+    //       notFound: true,
+    //       props: {},
+    //       revalidate: 10,
+    //     };
+    //   }
     return {
-        props: {service: data.service, keywords: data1.keywords},
-        revalidate: 10,
+        props: {service: data.service}
     }
 }
-export const getStaticPaths = async() => {
-    let data = await fetch(`${host2}/api/data/keywords`)
-    data = await data.json();
-    let paths = [];
-    data.keywords?.forEach((blog) => {
-      paths.push({
-        params: {
-            url: blog?.url,
-        },
-      });
-    });
+// export const getStaticPaths = async() => {
+//   let data = await fetch(`${host2}/api/data/keywords`)
+//     data = await data.json();
+//     let paths = [];
+//     data.keywords?.forEach((blog) => {
+//       paths.push({
+//         params: {
+//             url: blog?.url,
+//         },
+//       });
+//     });
   
-    return {
-      paths,
-      fallback: true,
-    };
-  }
-const Service = ({service,keywords}) => {
+//     return {
+//       paths,
+//       fallback: true,
+//     };
+//   }
+const Service = ({service}) => {
     // console.log("--------------brrrrrrr", keywords)
     return ( 
+        <>
+        {service &&
         <>
         <Head >
           {service && <title>{service.metaTitle}</title> || <title>Writer </title>}
@@ -51,7 +52,7 @@ const Service = ({service,keywords}) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         {service && <div className="">
-            <Hero1 heading={service.h1}  meta={service.meta} capture={service.capture} title={service.title}/>
+            <Hero1 heading={service.h1}  meta={service.metaDescription} capture={service.capture} title={service.title}/>
             <div className="max-w-7xl 2xl:mx-auto mx-6 peer py-4">
            <div className="text-base mt-8 servi" dangerouslySetInnerHTML={{__html: service.description}}>
              </div>
@@ -66,6 +67,8 @@ const Service = ({service,keywords}) => {
             </div>
         </div>}
         <div className='-mb-5'><Ordering /></div>
+        </>
+      }
         </>
      );
 }

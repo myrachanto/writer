@@ -4,14 +4,14 @@ import Ordering from "../components/patches/ordering"
 import Seo from "../components/patches/Seo"
 import { host2 } from "../utils/myrconstants"
 export const getStaticProps = async (context) => {
-    const res = await fetch(`${host2}/api/services`)
+  const res = await fetch(`${host2}/api/data/keywords`)
     const data =  await res.json()
 
     const resp = await fetch(`${host2}/api/seo/services`)
     const datas =  await resp.json()
-  // console.log("------------------>>>>>>>>>", datas)
+  // console.log("------------------>>>>>>>>>", data)
     return {
-        props: {items: data.services, seo:datas.meta},
+        props: {items: data.keywords, seo:datas.meta},
         revalidate: 10,
     }
   }
@@ -28,13 +28,13 @@ const Services = ({items, seo}) => {
       <h2 className='flex justify-center items-center font-semibold py-10'>Services</h2>
       <div className='max-w-7xl  2xl:mx-auto mx-4 grid lg:grid-cols-3 md:grid-cols-2'>
       {items && items.map(item => (
-        <div className=" p-4 shadow-sm m-2" key={item.title}>
-        <div className="bg-blue-700 p-2 text-white"> {item.title}</div>
-        {item.children && item.children.map(child => (
+        <div className=" p-4 shadow-sm" key={item.title}>
+      <Link href={item.url}><a className="cursor-pointer"> <div className=" p-2 "> {item.title}</div></a></Link>
+        {/* {item.children && item.children.map(child => (
         <div className="p-2 cursor-pointer" key={child.id.url}>
             <Link href={'/services/'+child.id.url}><a className="cursor-pointer">{child.id.name}</a></Link>
             </div>
-      ))}
+      ))} */}
         </div>
       ))}
       </div>
