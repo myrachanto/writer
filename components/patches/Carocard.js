@@ -58,7 +58,7 @@ const Carocard = ({h1,capture}) => {
                 <div className="text-2xl font-bold">$12.99</div>
                 </div>
                 <div>
-                <a href="https://acemywriter.com/order/" target="_blank"><button className="rounded-lg bg-blue-700 w-full my-4 p-3 text-white font-semibold">Continue to Order</button></a>
+                <a href="https://acemywriter.com/order/" target="_blank"  rel="noreferrer"><button className="rounded-lg bg-blue-700 w-full my-4 p-3 text-white font-semibold">Continue to Order</button></a>
                 </div>
                 </div>
                 </div>
@@ -131,7 +131,7 @@ const Carocard = ({h1,capture}) => {
                     <div className="text-2xl font-bold">$12.99</div>
                     </div>
                     <div>
-                    <a href="https://acemywriter.com/order/" target="_blank"><button className="rounded-lg bg-blue-700 w-full my-4 p-3 text-white font-semibold">Continue to Order</button></a>
+                    <a href="https://acemywriter.com/order/" target="_blank"  rel="noreferrer"><button className="rounded-lg bg-blue-700 w-full my-4 p-3 text-white font-semibold">Continue to Order</button></a>
                     </div>
                     </div>
                     </div>
@@ -201,7 +201,7 @@ const Carocard = ({h1,capture}) => {
                     <div className="text-2xl font-bold">$12.99</div>
                     </div>
                     <div>
-                    <a href="https://acemywriter.com/order/" target="_blank"><button className="rounded-lg bg-blue-700 w-full my-2 p-3 text-white font-semibold">Continue to Order</button></a>
+                    <a href="https://acemywriter.com/order/" target="_blank"  rel="noreferrer"><button className="rounded-lg bg-blue-700 w-full my-2 p-3 text-white font-semibold">Continue to Order</button></a>
                     </div>
                     </div>
                     </div>
@@ -269,7 +269,7 @@ const Carocard = ({h1,capture}) => {
                     <div className="text-2xl font-bold">$12.99</div>
                     </div>
                     <div>
-                    <a href="https://acemywriter.com/order/" target="_blank"><button className="rounded-lg bg-blue-700 w-full my-2 p-3 text-white font-semibold">Continue to Order</button></a>
+                    <a href="https://acemywriter.com/order/" target="_blank"  rel="noreferrer"><button className="rounded-lg bg-blue-700 w-full my-2 p-3 text-white font-semibold">Continue to Order</button></a>
                     </div>
                     </div>
                     </div>
