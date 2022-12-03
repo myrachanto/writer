@@ -1,3 +1,4 @@
+import Image from 'next/image'
 const Section1 = ({footerContent,partb,partc1,partc2,partc3}) => {
     return ( 
         <div>
@@ -7,7 +8,16 @@ const Section1 = ({footerContent,partb,partc1,partc2,partc3}) => {
       <div className="flexing  max-w-7xl xl:mx-auto mx-6">
         <div className="grid md:grid-cols-2 gap-4">
           <div className=" flex justify-center items-center">
-          <img src="dissertation-help-and-capstone-project.jpg" alt="responsive web development" className="cardimg1"/>
+          <Image
+        // loader={myLoader}
+        src={"/dissertation-help-and-capstone-project.jpg"}
+        alt="dissertation-help-and-capstone-project"
+        width={500}
+        height={300}
+        priority
+        className="w-full  object-cover cursor-pointer cardimg1"
+      />
+          {/* <img src="dissertation-help-and-capstone-project.jpg" alt="responsive web development" className="cardimg1"/> */}
         </div>
         <div className="">
             <div className="text-base mt-8 peer " dangerouslySetInnerHTML={{__html: partb}}></div>

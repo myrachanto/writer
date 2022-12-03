@@ -20,7 +20,7 @@ export const  order = {
     { level: 'Premium', rate: 2.4 },
     { level: 'Platinum', rate: 2.8 }
   ]
-  export const  time= [
+  export const  times= [
     { name: '6 hrs', value: 6, charge: 0.85 },
     { name: '12 hrs', value: 12, charge: 0.8 },
     { name: '24 hrs', value: 24, charge: 0.75 },
@@ -41,6 +41,6 @@ export const  order = {
     { name: 'Presentation', charge: 0.5 }
   ]
   export const  spacingOptions= [
-    'Single spacing',
-    'Double'
+    {name: 'Single spacing'},
+    {name: 'Double'}
   ]

@@ -12,14 +12,14 @@ const Hero1 = ({heading, meta, capture,image,title}) => {
                     { meta && <div className="text-lg  text-white py-2" dangerouslySetInnerHTML={{__html: meta}}></div>}
                     {/* { capture && <div className="text-base  text-white py-2" dangerouslySetInnerHTML={{__html: capture}}></div>} */}
                 </div>
-                <div className='flex justify-center items-center p-5 mt-28'>
+                <div className='flex justify-center items-center p-5 mt-28 '>
                  {image &&    <Image
                         src={`${host}/uploads/blog/${image}`}
                         alt={title}
                         width={500}
-                        height={400}
+                        height={370}
                         priority
-                        className="cardimg rounded-lg"
+                        className="w-full rounded-lg"
                     />}
             </div>
                 <div>

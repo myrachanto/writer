@@ -1,12 +1,15 @@
 import Hero1 from "../../components/heros/hero1";
 import Ordering from "../../components/patches/ordering";
-import {host} from "../../utils/myrconstants"
+import {host, host2} from "../../utils/myrconstants"
 import Head from 'next/head'
+import Link from "next/link";
 
 export const getStaticProps = async ({params}) => {
     const res = await fetch(`${host}/api/blog/` + params.url)
      const data =  await res.json()
 
+     let datas = await fetch(`${host2}/api/data/keywords`)
+      datas =  await datas.json()
     //  console.log("--------------", data)
     if (Object.keys(data).length === 0) {
       return {
@@ -16,7 +19,7 @@ export const getStaticProps = async ({params}) => {
       };
     }
     return {
-        props: {blog: data.article},
+        props: {blog: data.article ,keywords: datas.keywords || []},
         revalidate: 10,
     }
 }
@@ -37,7 +40,7 @@ export const getStaticPaths = async() => {
       fallback: true,
     };
   }
-const Blog = ({blog}) => {
+const Blog = ({blog, keywords}) => {
     // console.log("--------------", blog)
     return ( 
         <>
@@ -54,6 +57,13 @@ const Blog = ({blog}) => {
          </div>
             </div>
         </div>
+        <div className="max-w-7xl 2xl:mx-auto mx-6 peer py-4">
+        <div className="grid md:grid-cols-3 bg-slate-100 rounded-md">
+                {keywords && keywords.map(keyword => (
+                    <Link href={keyword.url} key={keyword.name}><div className=" p-2 cursor-pointer">{keyword.title}</div></Link>
+                ))}
+             </div>
+             </div>
         <div className='-mb-5'><Ordering /></div>
         </>
       }
